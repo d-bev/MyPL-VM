@@ -1,0 +1,41 @@
+
+
+int function(int x,int  y ) { x = x
++y x=x-y return x }
+
+struct Node {int val,
+ Node next }
+
+       int main(){
+if (true) { x = 1 y= 2
+}elseif( false ){ print("blah") print("hah")
+}
+else {x= y}
+
+
+t = x*y+z
+t = (u*v) + z(u*v) + w
+
+
+var1 = 0- x*y
+var2 = not (x and y) or (y and x)
+var3 = x
+var4 = not x
+
+
+
+
+# Hello World
+
+              string s
+
+        =
+
+"Hello World!\n"
+
+print (
+             s
+)
+}
+
+

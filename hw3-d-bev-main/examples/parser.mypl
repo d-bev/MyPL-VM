@@ -1,0 +1,161 @@
+
+#----------------------------------------------------------------------
+# MyPL test file to test different parts of the parser.
+# Only checks for valid syntax examples. See unit tests for additional
+# test cases.
+#----------------------------------------------------------------------
+
+
+struct EmptyNode {
+}
+
+struct Node {
+  int value,
+  Node next
+}
+
+struct KVNode {
+  string key,
+  int value,
+  KVNode next
+}
+
+struct VariousTypesTest {
+  int v,
+  double w,
+  bool x,
+  char y,
+  string z,
+  array int a
+}
+
+
+void f1() {
+  return null
+}
+
+int f2() {
+  return 42
+}
+
+void f3() {
+  int x1 = 42
+  double x2 = 3.14
+  bool x3 = true
+  bool x4 = false
+  char x5 = 'a'
+  string x6 = "abcdef"
+  Node x7 = new Node
+  Node x8 = null
+}
+
+void f4(int p1) {
+  if (p1) {
+  }
+  else {
+  }
+}
+
+int f5(bool p1) {
+  if (p1) {
+    return 42
+  }
+  return 43
+}
+
+int f6(int p1, int p2) {
+  if ((p1 - p2) < p1) {
+    return p1
+  }
+  elseif (p2 >= p1) {
+    return p2
+  }
+  else {
+    return p1 + p2
+  }
+}
+
+Node f7(int v1, string msg) {
+  if (v1 >= 1) {
+    print(msg)
+    return new Node
+  }
+  return nil
+}
+
+bool f8(int p1, double p2, bool p3, char p4, string p5) {
+  for (int i = 1; i <= 10; i = i + 1) {
+    if (even(i)) {
+      for (int j = 10; j >= 1; j = j - 1) {
+        if (not even(j)) {
+          print(i)
+        }
+      }
+    }
+  }
+  return true
+}
+
+string f9(int n) {
+  string s = ""
+  while (n > 0) {
+    s = s + "a"
+    n = n + 1
+  }
+  return s
+}
+
+double f10(double x, double y) {
+  double r = 0.0
+  if ((x < y or x == y) and x > 0) {
+    r = ((x / (x + y)) * 100) + (x * 0.1)
+  }
+  elseif (y > 0) {
+    r = ((y / (x + y)) * 100) + (y * 0.1)
+  }
+  else {
+    r = 100
+  }
+  return r
+}
+
+int f11(int x) {
+  if (x < 1) {
+    return 0 - 1
+  }
+  elseif (x == 1) {
+    return 1
+  }
+  return f11(x-1) + f11(x-2) 
+}
+
+Node f12(Node node) {
+  if (node == null) {
+    return null
+  }
+  Node copy = new Node
+  copy.value = node.value
+  copy.next = f12(node.next)
+  return copy
+}
+
+void f13(Node node) {
+  if (node != null) {
+    f13(node.next)
+  }
+}
+
+int f14(int i, array int a) {
+  if (i < 0 or i >= a.size) {
+    return null
+  }
+  return a[i]
+}
+
+array int f15(array int a) {
+  array int copy = new int[a.length / 2]
+  for (int i = 0; i < (a.length / 2); i = i + 1) {
+    copy[i] = a[i]
+  }
+  return copy
+}

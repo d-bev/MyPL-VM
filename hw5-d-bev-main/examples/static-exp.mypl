@@ -1,0 +1,46 @@
+
+#----------------------------------------------------------------------
+# Description: expression passing tests
+# Requires: basic variable declarations
+#----------------------------------------------------------------------
+
+struct T {
+}
+
+void good_expressions() {
+
+  T t1 = new T
+  
+  # boolean expressions
+  bool x1 = true
+  bool x2 = false
+  bool e1 = null
+  e1 = not false
+  e1 = not not false
+  e1 = not x1
+  e1 = x1 and x2
+  e1 = (x1 and x2) or (x1 and not x1) or (not x1 and not x2)
+  e1 = (t1 == null) or (null == t1) or (null == null) or (null != "foo")
+  e1 = (x1 == x2) and (x1 != x2)
+  e1 = (1 == 2) or (1.1 == 2.0) or ('a' == 'b') or ("a" == "b") or (t1 == t1)
+  e1 = (1 != 2) or (1.1 != 2.0) or ('a' != 'b') or ("a" != "b") or (t1 != t1)
+  e1 = (1 <= 2) and (1.4 > 1.0) and ('a' >= 'b') and ("ab" < "bc")
+
+  # arithmetic expressions
+  int i1 = 6
+  double d1 = 3.14
+  string s1 = "ab"
+  char c1 = 'a'
+  i1 = i1 - i1
+  i1 = i1 - 5 - 6
+  i1 = i1 * 3 - i1 / i1
+  i1 = 1 + 2 + 3 + 4
+  d1 = d1 - d1 * d1 - d1 * 4.117
+  d1 = 1.0 + 2.0 + 3.0  
+  
+}
+
+
+
+void main() {
+}

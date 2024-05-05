@@ -1,0 +1,96 @@
+
+struct SimpleType {
+  int
+ v1
+
+,
+ double v2   ,     string     v3   
+   }
+
+
+int f1() {
+ int x =42 
+
+    return
+null
+
+
+x=
+6 x .
+y =  6 x. y .z="hi!"
+y=f ( x ) 
+
+ x= 3+3  x=40/10/2  x= 2+3/4 +5  
+
+y= 1+2 
+
+y=(4/2)+2- (3 * 2)
+
+ string s
+      ="foo" + "bar" + "baz"
+ double    f       = (10.0/2.0)-(3.0+1.14159) }
+
+int add_one ( int x   ) {x = x + 1
+return x }
+
+
+string
+add(
+string
+x  ,double y
+){
+return x+y }
+
+ int
+main(
+)
+{
+while ( x>=1 ) {
+ x=x - 1
+print ( x ) 
+}
+
+while (((x or y)and(z))or(not v)and not (v==0) or (not x))
+{
+print(y)
+return 5
+  }
+
+for ( int i = 3*4 ; i >= 0 ; i = i - 1 ) { x = x * i }
+  
+for (int j=0;j<=fac(n);j=j+1){print(j)}
+if (true) {
+print("true") }
+
+if (x < y) {
+print("x")
+}elseif (x > y){print("y")}
+elseif (x == y)
+{ print("x or y")}
+else {
+print("oops")
+}
+
+
+if (x <= y) {
+if (x != y) { print("x or y")
+}else{ print("x") }}
+elseif (x > y) { print("y") }
+else { print(add_one(x)) }
+}
+
+void comp_(int foo_bar , MyType baz)    {
+if ((foo_bar > 0) or not baz) {
+  while (foo_bar==1) { print("!") if (baz == nil) { print("")}
+  }
+ }
+}
+ int main(){
+ ptr1=new Node  ptr2 = new Node  ptr3 = new Node
+ptr1.next = ptr2 . ptr2.next d= ptr3 ptr3.next = null
+ptr1.next.val = 3
+ptr1.next = ptr2.next.val
+ptr1.next.next.next.next = ptr2 .  next  . next . next . next
+
+if (new Node) { ptr1 = new Node ptr2.val = ptr1.val + ptr3.val ptr3 = setVal(new Node, ptr.val) }
+}

@@ -1,0 +1,33 @@
+
+#----------------------------------------------------------------------
+# Very basic function tests
+#----------------------------------------------------------------------
+
+
+void println(string s) {
+  print(concat(s, "\n"))
+}
+
+int f1(int x, int y) {
+  int z = x + y
+  println("... in f1")
+  return z
+}
+
+string f2(string x) {
+  println(concat("... in f2, x = ", x)) 
+  return concat(x, x)
+}
+
+string f3(string x) {
+  x = f2(x)
+  println(concat("... in f3, after f2, x = ", x))
+  return x
+}
+
+void main() {
+  int r1 = f1(3, 4)
+  println(concat("Should be 7: ", to_string(r1)))
+  string r2 = f3("ab")
+  println(concat("Should be abab: ", r2))
+}

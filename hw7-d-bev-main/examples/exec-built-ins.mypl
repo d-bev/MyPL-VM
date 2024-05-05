@@ -1,0 +1,32 @@
+
+#----------------------------------------------------------------------
+# Simple built-in function tests
+#----------------------------------------------------------------------
+
+
+void main() {
+
+  print("Normal String\n")
+
+  print("String with \t tab\n")
+
+  print(to_string(to_int("42")))
+  print("\n")
+
+  print(to_string(to_double("3.14159")))
+  print("\n")
+
+  print(to_string(length("foo bar")))
+  print("\n")
+
+  print(get(0, "foo"))  
+  print("\n")
+
+  print(get(1, "foo"))
+  print("\n")  
+
+  print("Enter a string: ")
+  print(input())
+  print("\n")
+}
+

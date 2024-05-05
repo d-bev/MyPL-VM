@@ -1,0 +1,34 @@
+#----------------------------------------------------------------------
+# tests of more functions and structs
+#----------------------------------------------------------------------
+
+int a(int x) {
+  return x + 1
+}
+
+int b(int y) {
+  int x = a(y)
+  return x
+}
+
+struct T {
+  int x
+}
+
+int c(int x) {
+  T t = new T
+  return t.x
+}
+
+string d(string par1, int par2) {
+  if ((par2 > 0) and (par2 < 10) and (length(par1) != 0)) {
+    return par1
+  }
+  else {
+    return to_string(par2)
+  }
+}
+
+void main() {
+  d("foo", 1)
+}

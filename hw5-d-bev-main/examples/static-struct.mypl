@@ -1,0 +1,64 @@
+
+#----------------------------------------------------------------------
+# Description: struct declarations and path expressions
+# Requires: basic variable declarations, simple rvalue expressions,
+#           new expressions, basic function definitions (for main)
+#----------------------------------------------------------------------
+
+struct T1 {
+}
+
+struct T2 {
+  int x
+}
+
+struct T3 {
+  int x,
+  string y
+}
+
+struct T4 {
+  int x,
+  string y,
+  int z
+}
+
+struct T5 {
+  int x,
+  T4 t
+}
+
+struct T6 {
+  T4 t1,
+  T5 t2,
+  int x,
+  int y
+}
+
+struct T7 {
+  int x,
+  T7 n
+}
+
+struct Node {
+  int val,
+  Node nxt
+}
+
+void good_paths() {
+  Node n1 = new Node
+  Node n2 = new Node
+  Node n3 = n1.nxt
+  n1.val = 10
+  n1.nxt = n2
+  n2.val = 20
+  n2.nxt = new Node
+  n2.nxt.val = n1.val
+  n2.nxt.nxt = new Node
+  n2.nxt.nxt.val = n2.nxt.val
+}
+
+
+void main() {
+}
+

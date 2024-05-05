@@ -1,0 +1,93 @@
+
+#----------------------------------------------------------------------
+# Description: basic while and if tests passing tests
+# Requires:    basic function and variable declarations, simple rvalue
+#              expressions
+#----------------------------------------------------------------------
+
+void main() {
+
+  bool flag1 = true
+  bool flag2 = false
+
+  while (true) {
+  }
+
+  while (flag1) {
+  }
+
+  while (flag2) {
+  }
+
+  while (true) {
+    while (false) {
+    }
+    while (flag1) {
+    }
+  }
+
+  while (flag1) {
+    bool flag3 = true
+    while (flag3) {
+    }
+  }
+
+  if (true) {
+  }
+
+  if (flag1) {
+  }
+
+  if (flag1) {
+    bool flag3 = false
+  }
+  else {
+    bool flag3 = true
+  }
+
+  if (true) {
+    bool flag3 = false
+  }
+  elseif (flag2) {
+    bool flag3 = false
+  }
+  else {
+    bool flag3 = false
+  }
+
+  if (true) {
+    bool flag3 = false
+  }
+  elseif (flag2) {
+    bool flag3 = false
+  }
+  elseif (flag1) {
+    bool flag3 = false
+  }
+  else {
+    bool flag3 = false
+  }
+    
+  if (true) {
+    bool flag1 = false
+    if (flag1) {
+      bool flag2 = true
+      if (flag2) {
+        bool flag1 = true
+      }
+      else {
+        bool flag1 = true
+      }
+    }
+  }
+
+  while (flag1) {
+    if (false) {
+      bool flag1 = false
+    }
+    else {
+      bool flag1 = true
+    }
+  }
+
+}

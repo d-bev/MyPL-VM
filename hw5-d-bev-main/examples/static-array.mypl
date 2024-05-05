@@ -1,0 +1,21 @@
+
+#----------------------------------------------------------------------
+# Description: array declarations
+# Requires: basic variable declarations, simple rvalue expressions,
+#           new expressions, basic function definitions (for main)
+#----------------------------------------------------------------------
+
+void main() {
+  array int xs = new int[100]
+  xs[0] = 1
+  array string ys = new string[100]
+  ys[0] = "1"
+  array double zs = new double[50]
+  zs[0] = 3.1
+  int x = xs[99]
+  string y = ys[99]
+  double z = zs[49]
+  array int xs_ref = xs
+  array string ys_ref = ys
+  array double zs_ref = zs
+}

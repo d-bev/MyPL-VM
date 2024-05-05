@@ -1,0 +1,25 @@
+
+struct t1 {
+  int field1
+}
+
+struct t2 {
+  double field1,
+  string field2
+}
+
+void f1() {
+}
+
+int f2() {
+}
+
+string f3(int x) {
+}
+
+char f4(string str, int index) {
+}
+
+void main() {
+}
+

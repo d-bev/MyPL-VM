@@ -1,0 +1,55 @@
+
+# this is a comment
+
+# the punctuation symbols
+
+, . 
+
+ [] ( ) ;
+  { }
+
+
+# operators
+
+    + - * / 
+
+
+== > >= < <= !=  
+
+and or not
+
+  =
+
+ # numbers, characters, and other values
+
+42 3.14159 'a' 
+
+""  "hello world!" true false null
+
+# primitive data types
+
+int bool  double char  string void
+
+  # the various reserved words
+
+struct while for end array 
+
+ if else elseif
+
+  new  return 
+
+x xs ys foo bar foobarbaz f_bar foo_42_bar foo__
+
+x=y>z<=u().v
+
+
+# some examples of illegal tokens, uncomment to check that an error results:
+# !!
+# "hello
+#   world"
+# 'bb'
+# ''
+# _foo
+# 01234
+# 01.23
+
